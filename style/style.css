@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/*header*/
+.navbar {
+    position: fixed;          
+    width: 98%;              
+    z-index: 1000;            
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1a2456;
+    border-radius: 8px;
+}
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #f0efed;
+}
+.logo-icon {
+    width: 35px; 
+    margin-right: 16px;
+    vertical-align: middle; 
+}
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+}
+.navbar nav ul li {
+    margin-left: 25px;
+}
+.navbar nav ul li a {
+    color: #f0efed;
+    text-decoration: none;
+    font-weight: 500;
+}
+.navbar nav ul li a.shop {
+    font-weight: bold;
+}
+.navbar nav ul li a .icon {
+    width: 25px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+
+/*Página inicial*/
+.main{
+    background-image: url("../assets/background.png"); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding: 20px;
+}
+.hero {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f0efed;
+    text-align: center;
+}
+.hero .overlay {
+    padding: 50px;
+}
+.hero h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.hero p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #d3d3d3;
+}
+
+
+/*Produtos 1*/
+.products-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+    padding: 120px;
+    background-color: #f0efed;
+}
+.product-card {
+    padding: 5px 15px;
+    position: relative;
+    text-align: left;
+}
+.product-image {
+    position: relative;
+    margin-bottom: 10px;
+}
+.product-image img {
+    width: 100%;
+    height: auto;
+}
+.product-header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;            
+    margin-bottom: 10px;
+}
+.badge {
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    background-color: #ff8b68;
+    color: #1a2456;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.product-card h3 {
+    font-size: 21px;
+    color: #1a2456;
+    margin: 0px ;
+}
+.product-card p {
+    font-size: 16px;
+    color: #1a2456;
+    margin-bottom: 15px;
+}
+.price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #1a2456;
+    text-align: right;
+}
+
+
+/*Console personalizado*/
+.custom-console {
+    text-align: center;
+    padding: 60px 0px;
+    background-color: #C1C1C1;
+    height: 80vh;
+}
+.custom-console h2 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #1a2456;
+    margin-bottom: 15px;
+}
+.custom-console p {
+    font-size: 1.6em;
+    color: #1a2456;
+    margin-bottom: 0px;
+}
+.console-image img {
+    width: 80%;
+    max-width: 40em;
+    height: auto;
+}
+
+/*Produtos 2*/
+#section2{
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+/*Rodapé*/
+.footer {
+    background-color: #1a2456;
+    color: #f0efed;
+    padding: 60px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    text-align: left;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #f0efed;
+}
+
+.footer-section p, .footer-section ul, .footer-section form, .footer-section .social-icons {
+    margin: 15px 0;
+    font-size: 16px;
+    color: #f0efed;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 10px 0;
+}
+
+.footer-section ul li a {
+    color: #f0efed;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-section.subscribe p {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.footer-section form {
+    display: flex;
+    align-items: center;
+}
+
+.footer-section input[type="email"] {
+    padding: 8px;
+    font-size: 15px;
+    border: 1px solid #f0efed;
+    background-color: transparent;
+    color: #f0efed;
+    margin-right: 15px;
+}
+
+.footer-section button {
+    padding: 8px 12px;
+    font-size: 15px;
+    background-color: rgba(255, 139, 104, 0.7);
+    border: none;
+    color: #1a2456;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
